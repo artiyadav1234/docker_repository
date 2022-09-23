@@ -1,0 +1,6 @@
+FROM ubuntu
+RUN mkdir /mydata
+RUN touch f1 f2
+ADD https://github.com/yankils/hello-world.git /mydata
+COPY dir /mydata
+CMD ["/bin/bash"]
